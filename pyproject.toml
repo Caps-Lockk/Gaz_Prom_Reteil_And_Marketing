@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fuel-elasticity-intelligence-cup"
+version = "1.0.0"
+description = "Аналитика ценовой чувствительности клиентов АЗС: сегментация, holdout, персональные предложения и экономика"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{name = "Intelligence Cup — аналитический проект"}]
+dependencies = ["numpy>=1.24,<3", "pyxlsb>=1.0.10,<2", "matplotlib>=3.7,<4"]
+
+[project.optional-dependencies]
+dev = ["pytest>=7,<10", "ruff>=0.6,<1"]
+
+[project.scripts]
+fuel-elasticity = "fuel_elasticity.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"

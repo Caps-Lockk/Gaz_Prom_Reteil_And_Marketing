@@ -1,0 +1,4 @@
+# Воспроизводимый запуск без установки пакета (pip install -r requirements.txt)
+numpy>=1.24,<3
+pyxlsb>=1.0.10,<2
+matplotlib>=3.7,<4

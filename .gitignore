@@ -1,0 +1,34 @@
+# Приватные исходные данные и все клиентские выгрузки
+/data/raw/*
+!/data/raw/.gitkeep
+/outputs/
+**/*customer_scores*.csv
+**/*клиент*.csv
+**/*Клиент*.csv
+*.xlsb
+*.xlsx
+*.xls
+*.parquet
+*.npz
+*.pkl
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+*.egg-info/
+dist/
+build/
+
+# Editor / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+.env

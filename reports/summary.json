@@ -1,0 +1,124 @@
+{
+  "dataset": {
+    "clients": 33146,
+    "unique_main_stations": 642,
+    "period": [
+      "2023-09",
+      "2024-05"
+    ],
+    "total_liters": 29891102.548,
+    "zero_client_month_share": 0.13029224240230092,
+    "customer_months": 298314,
+    "paired_zero_price_months": 473
+  },
+  "monthly": [
+    {
+      "month": "2023-09",
+      "liters": 3998952.9970000004,
+      "mean_price_gap_rub_per_liter": -0.40163881011283414
+    },
+    {
+      "month": "2023-10",
+      "liters": 4008533.17,
+      "mean_price_gap_rub_per_liter": -0.08332196946841257
+    },
+    {
+      "month": "2023-11",
+      "liters": 3754849.219,
+      "mean_price_gap_rub_per_liter": 0.3073239606589028
+    },
+    {
+      "month": "2023-12",
+      "liters": 3752009.1950000003,
+      "mean_price_gap_rub_per_liter": 0.7578845109515479
+    },
+    {
+      "month": "2024-01",
+      "liters": 3175109.942,
+      "mean_price_gap_rub_per_liter": 0.9895411211005853
+    },
+    {
+      "month": "2024-02",
+      "liters": 2977918.134,
+      "mean_price_gap_rub_per_liter": 0.9326117781934473
+    },
+    {
+      "month": "2024-03",
+      "liters": 2855245.5330000003,
+      "mean_price_gap_rub_per_liter": 1.3966532914982197
+    },
+    {
+      "month": "2024-04",
+      "liters": 2638482.349,
+      "mean_price_gap_rub_per_liter": 1.5986876244494055
+    },
+    {
+      "month": "2024-05",
+      "liters": 2730002.0089999996,
+      "mean_price_gap_rub_per_liter": 1.5340979303686717
+    }
+  ],
+  "segments": {
+    "Ценочувствительный": {
+      "clients": 8822,
+      "share": 0.26615579557110963,
+      "liters": 9083081.47
+    },
+    "Ценоустойчивый": {
+      "clients": 10735,
+      "share": 0.3238701502443734,
+      "liters": 10599399.92
+    },
+    "Неопределённый": {
+      "clients": 13589,
+      "share": 0.409974054184517,
+      "liters": 10208621.158
+    }
+  },
+  "validation": {
+    "train_period": [
+      "2023-09",
+      "2023-10",
+      "2023-11",
+      "2023-12",
+      "2024-01",
+      "2024-02",
+      "2024-03"
+    ],
+    "test_period": [
+      "2024-04",
+      "2024-05"
+    ],
+    "groups": {
+      "sensitive": {
+        "clients": 8964,
+        "holdout_beta": -0.20088162910627855
+      },
+      "stable": {
+        "clients": 9455,
+        "holdout_beta": -0.039624760135767205
+      },
+      "uncertain": {
+        "clients": 14727,
+        "holdout_beta": -0.06489182202941636
+      }
+    }
+  },
+  "offer": {
+    "offer_policy": {
+      "rebate_per_liter": 0.5,
+      "cap_liters": 70,
+      "assumed_uplift": 0.05,
+      "min_price_gap": 0.5
+    },
+    "eligible_clients": 3568,
+    "baseline_liters": 339970.595,
+    "scenario_liters": 356969.12475,
+    "incremental_liters": 16998.529750000016,
+    "bonus_cost_rub": 88164.90375,
+    "incremental_contribution_rub": 169599.68935110304,
+    "net_incremental_rub": 81434.78560110304,
+    "breakeven_uplift": 0.025840051718868707
+  },
+  "disclaimer": "Индивидуальные коэффициенты описывают ассоциации; ценовая причинность, удержанный объём и uplift не установлены. Сценарная экономика требует рандомизированного A/B-теста."
+}
